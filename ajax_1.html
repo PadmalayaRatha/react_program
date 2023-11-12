@@ -1,0 +1,22 @@
+<script src = "react.development.js"></script>
+<script src = "babel.min.js"></script>
+<script src = "react-dom.development.js"></script>
+
+<div id = "root">
+</div>
+
+<script type = "text/babel">
+    const App=()=>{
+        const fnGetUsers = ()=>{
+            alert('ss')
+        }
+
+        return <div>
+            <button  onClick = {fnGetUsers}>Get users</button>
+            </div>
+    }
+
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+    root.render(<App/>)
+</script>
